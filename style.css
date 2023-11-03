@@ -6,6 +6,11 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 1000;
 }
 @media (max-width: 575px) {
   #header {
@@ -41,6 +46,11 @@
 }
 #header .header_nav li {
   margin: 0px 15px;
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+#header .header_nav li:hover {
+  transform: scale(1.4);
 }
 #header .header_button {
   display: flex;
@@ -68,6 +78,12 @@
   background-color: #23A6F0;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
+  transition: all linear 0.36s;
+}
+#header .header_button .become:hover {
+  background-color: rgba(0, 0, 255, 0.503);
+  transform: scale(1.1);
 }
 
 #nav {
@@ -147,6 +163,9 @@
   line-height: 24px; /* 150% */
   letter-spacing: 0.1px;
 }
+.section .box .circle {
+  cursor: pointer;
+}
 .section .box .btn {
   border-radius: 37px;
   color: #23A6F0;
@@ -164,6 +183,15 @@
   flex-wrap: wrap;
   margin-top: 3%;
 }
+.section .cards img {
+  height: 664px;
+  width: 327px;
+  cursor: pointer;
+  transition: all linear 0.25s;
+}
+.section .cards img:hover {
+  transform: scale(1.1);
+}
 .section .icons .icons_title {
   font-size: 20px;
   font-style: normal;
@@ -177,6 +205,10 @@
 }
 .section .icons .icon img {
   margin: 0px 20px;
+  cursor: pointer;
+}
+.section .icons .icon img:hover {
+  transform: translate(15px, 10px);
 }
 
 .main .title_main {
@@ -211,7 +243,6 @@
   }
 }
 .main p {
-  text-align: center;
   margin-top: 5%;
   margin-bottom: 5%;
 }
@@ -239,6 +270,12 @@
   width: 133px;
   height: 48px;
   border-radius: 9px;
+  cursor: pointer;
+  transition: all linear 0.36s;
+}
+.main .main_section2 .btn:hover {
+  background-color: rgba(0, 0, 255, 0.503);
+  transform: scale(1.1);
 }
 .main .main_section2 .img {
   margin-top: 2%;
@@ -294,6 +331,11 @@
   height: 47px;
   color: #fff;
   background-color: #23A6F0;
+  cursor: pointer;
+  transition: all linear 0.36s;
+}
+.footer .navigation .form .btn:hover {
+  transform: scale(1.1);
 }
 .footer .end {
   background-color: #fafafa;
